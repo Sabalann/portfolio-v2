@@ -8,8 +8,18 @@ export default function Home() {
   return (
     <>
       <Hamburger/>
+      <Nav/>
       <section id="whoAmI">
         <WhoAmI/>
+      </section>
+      <section id="work">
+
+      </section>
+      <section id="about">
+
+      </section>
+      <section id="contact">
+
       </section>
     </>
   );

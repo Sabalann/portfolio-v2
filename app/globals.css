@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #111;
+  --background: #000;
   --foreground: #171717;
   --main--text--Color: #fff;
   --secondary--text-color: #555;
@@ -17,13 +17,6 @@ html, body {
 
 html {
   background-color: var(--background);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
@@ -62,4 +55,27 @@ video { aspect-ratio:16/9; }
 input:focus { outline:none; }
 input { border:none; }
 ul,ol { list-style-type: none; }
-button { border:none; }
+
+button { 
+  border:none; 
+  color: var(--secondary--text-color);
+  transition: .3s ease;
+  text-align: start;
+
+}
+
+button:hover {
+  color: var(--main--text--Color);
+  transition: .3s ease;
+}
+
+section {
+  height: 100dvh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+span {
+  color: var(--main--text--Color);
+}

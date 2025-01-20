@@ -10,7 +10,7 @@ export default function Hamburger() {
     }
 
     return (
-        <>
+        <div className='hamburger'>
             <div className={`off-screen-menu ${menuActive ? 'active' : ''}`}>
                     <span>Home</span>
                     <span>Work</span>
@@ -24,6 +24,6 @@ export default function Hamburger() {
                     <span/>
                 </div>
             </nav>
-        </>
+        </div>
     );
 }

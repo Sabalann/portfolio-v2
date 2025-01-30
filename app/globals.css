@@ -37,6 +37,8 @@ h1 {
   line-height: 1;
 }
 
+p {color: var(--main--text--Color);}
+
 h4, li, label, input, textarea, select, p {
   font-size: 1.8rem;
 }
@@ -70,7 +72,7 @@ button:hover {
 }
 
 section {
-  height: 100dvh;
+  min-height: 100dvh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(6, 1fr);

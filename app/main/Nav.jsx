@@ -7,10 +7,10 @@ export default function Nav() {
                 document.getElementById('whoAmI').scrollIntoView({ behavior: 'smooth' })}}> Home
             </button>
             <button onClick={() => {
-                document.getElementById('work').scrollIntoView({ behavior: 'smooth' })}}> Work
+                document.getElementById('work').scrollIntoView({ behavior: 'smooth' })}}> Projecten
             </button>
             <button onClick={() => {
-                document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}}> About
+                document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}}> Over mij
             </button>
             <button onClick={() => {
                 document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}}> Contact

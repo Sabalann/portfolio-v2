@@ -1,3 +1,7 @@
+:root {
+    --grid-column: 5/12;
+} 
+
 .off-screen-menu {
     background-color: var(--background);
     height: 100vh;
@@ -78,7 +82,7 @@ nav {
 }
 
 .intro {
-    grid-column: 5/12;
+    grid-column: var(--grid-column);
     grid-row: 2/6;
 }
 
@@ -91,10 +95,33 @@ nav {
     transform: translate(0, -70%);
 }
 
+.projects {
+    grid-column: var(--grid-column);
+    grid-row: 1/6;
+    padding-top: 5dvh;
+}
+
+.about {
+    grid-column: var(--grid-column);
+    grid-row: 2/6;
+}
+
+.about p {
+    font-size: clamp(25px, 4vw, 3vw);
+}
+
 @media (max-width: 600px) {
     .hamburger {
         display: block;
     }
+
+    .nav-container {
+        display: none;
+    }
+
+    :root {
+        --grid-column: 2/12;
+    } 
   }
 
 @media (min-width: 600px) {

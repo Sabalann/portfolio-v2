@@ -5,6 +5,7 @@ import "./main/main.css"
 import Nav from "./main/Nav";
 import Hamburger from "./main/Hamburger";
 import About from "./main/About";
+import Contact from "./main/Contact"
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
         <About/>
       </section>
       <section id="contact">
-
+        <Contact/>
       </section>
     </>
   );

@@ -110,7 +110,6 @@ nav {
     transition: ease 0.500s;
 }
 
-
 .about {
     grid-column: var(--grid-column);
     grid-row: 2/6;
@@ -124,7 +123,6 @@ nav {
     grid-column: var(--grid-column);
     grid-row: 2/7;
 }
-
 
 .contact-button {
     border-bottom: 2px solid #aaa;
@@ -140,6 +138,10 @@ nav {
 .contact-button:hover {
     opacity: 0.8;
     color: white;
+}
+
+.arrow-img {
+    
 }
 
 @media (max-width: 600px) {

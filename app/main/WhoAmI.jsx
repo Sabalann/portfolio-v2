@@ -1,9 +1,11 @@
 'use client'
+import Image from "next/image";
 import { useState } from "react";
 
 
 export default function WhoAmI() {
     const [selectedAudience, setSelectedAudience] = useState("everyone");
+    const arrowSrc = "/arrow.jpeg"
 
     const textOptions = {
         everyone: "Welkom! Ik ben Sabalan en ik hou ervan om digitale ervaringen te creëren. Mijn focus ligt voornamelijk op het ontwikkelen van websites, maar ik ben ook actief in het maken van games, het bewerken van video’s en foto’s en nog veel meer. Kortom, ik ben een veelzijdige maker met een brede creatieve interesse.",
@@ -15,6 +17,7 @@ export default function WhoAmI() {
         <>
             <div className="intro">
                 <div className="flex gap-4">
+                    <Image className="arrow-img" src={arrowSrc} width={50} height={50} alt="arrow"></Image>
                     {["everyone", "recruiters", "clients"].map((option) => (
                     <label key={option} className="flex items-center gap-2 cursor-pointer">
                         <input
@@ -26,7 +29,7 @@ export default function WhoAmI() {
                         className="hidden"
                         />
                         <span
-                        className={`py-2 text-base ${
+                        className={`py-2 text-base transition-all duration-500 ease-in-out ${
                             selectedAudience === option ? " text-white" : "text-gray-400"
                         }`}
                         >

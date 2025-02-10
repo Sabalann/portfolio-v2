@@ -141,7 +141,37 @@ nav {
 }
 
 .arrow-img {
-    
+    position: absolute;
+    animation: float 2s ease infinite;
+    transform: rotate(80deg);
+}
+
+.options {
+    animation: glow 5s ease infinite;
+}
+
+@keyframes glow {
+    25% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(1.5);
+    }
+    75% {
+        filter: brightness(1);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: rotate(80deg) translateX(-15px) translateY(-120px);
+    }
+    50% {
+        transform: rotate(80deg) translateX(-20px) translateY(-120px);
+    }
+    100% {
+        transform: rotate(80deg) translateX(-15px) translateY(-120px);
+    }
 }
 
 @media (max-width: 600px) {
